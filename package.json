@@ -1,0 +1,28 @@
+{
+  "name": "salt",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrey-ageev/salt.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "BEM",
+    "PixelPerfect",
+    "Flex",
+    "Webpack",
+    "GitHub"
+  ],
+  "author": "Andrey Ageev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrey-ageev/salt/issues"
+  },
+  "homepage": "https://github.com/andrey-ageev/salt#readme"
+}
