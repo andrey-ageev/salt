@@ -16,7 +16,7 @@ module.exports = {
         open: true,
         hot: true,
     },
-    entry: path.resolve(__dirname, 'src', 'index.js'),
+    entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'index.js')],
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
@@ -52,6 +52,16 @@ module.exports = {
                     'sass-loader'
                 ],
             },
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: ['@babel/preset-env']
+                  }
+                }
+            }
         ],
     },
 };
