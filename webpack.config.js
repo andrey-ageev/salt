@@ -53,7 +53,14 @@ module.exports = {
                 ],
             },
             {
-                test: /\.m?js$/,
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[name][ext]'
+                }
+            },
+            {
+                test: /\.m?js$/i,
                 exclude: /(node_modules|bower_components)/,
                 use: {
                   loader: 'babel-loader',
