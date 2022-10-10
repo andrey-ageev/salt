@@ -1,1 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body {
+    font-family: 'ProximaNova-Regular', sans-serif;
+}
+
+.header {
+    background-color: $blue;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    min-width: 1074px;
+    padding-left: 224px;
+    padding-right: 224px;
+    padding-top: 32px;
+}
+
+.header__logo-wrapper {
+    width: 78px;
+    height: 100px;
+}
