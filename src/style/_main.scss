@@ -14,6 +14,7 @@ body {
 
 .header__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -26,4 +27,38 @@ body {
 .header__logo-wrapper {
     width: 78px;
     height: 100px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.header__item {
+    margin-right: 28px;
+}
+
+.header__item:last-child{
+    margin-right: 0;
+}
+
+.header__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.header__link:active,
+.header__link:focus{
+    border-bottom: 3px solid $orange;
+}
+
+.header__link:hover{
+    color: $orange;
 }
