@@ -22,7 +22,6 @@
 .header__list {
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
 }
 
 .header__item {
@@ -39,7 +38,6 @@
     font-size: 15px;
     line-height: 18px;
     color: $white;
-    text-decoration: none;
     text-transform: uppercase;
     transition: .2s;
 }
@@ -47,6 +45,7 @@
 .header__link:active,
 .header__link:focus{
     border-bottom: 3px solid $orange;
+    transition: .3s;
 }
 
 .header__link:hover{
